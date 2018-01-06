@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+
+body{
+  font-size: 28px;
+
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+
+}
+
+.backgroundImage {
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.headline{
+  margin-top: 80px;
+  font-family: 'Lobster', cursive;
+  font-size: 50px;
+  color: white;
+  text-shadow: 2.5px 2.5px 5px gray;
+}
+
+#inputField{
+  border-radius: 10px;
+}
+
+/*IMPORTED CSS for button*/
+.button {
+   border-top: 1px solid #96d1f8;
+   background: #65a9d7;
+   background: -webkit-gradient(linear, left top, left bottom, from(#3e779d), to(#65a9d7));
+   background: -webkit-linear-gradient(top, #3e779d, #65a9d7);
+   background: -moz-linear-gradient(top, #3e779d, #65a9d7);
+   background: -ms-linear-gradient(top, #3e779d, #65a9d7);
+   background: -o-linear-gradient(top, #3e779d, #65a9d7);
+   padding: 9px 18px;
+   -webkit-border-radius: 29px;
+   -moz-border-radius: 29px;
+   border-radius: 29px;
+   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   box-shadow: rgba(0,0,0,1) 0 1px 0;
+   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   color: white;
+   font-size: 18px;
+   font-family: Helvetica, Arial, Sans-Serif;
+   text-decoration: none;
+   vertical-align: middle;
+
+   transition-duration: 500ms;
+   }
+.button:hover {
+   border-top-color: #28597a;
+   background: #28597a;
+   color: #ccc;
+   }
+.button:active {
+   border-top-color: #1b435e;
+   background: #1b435e;
+   }
+/*END*/
+
+button{
+  cursor: pointer;
+}
+
+#randomButton{
+  margin-top: 20px;
+}
+
+#randomButtonText{
+  text-decoration: none;
+  color: white;
+}
+
+.btn-primary{
+  transition-property: background-color;
+  transition-duration: 500ms;
+}
+
+.btn-primary:hover{
+  background-color: lightblue;
+}
+
+
+.resultContent{
+  border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  border: 0px solid #4f4f4f;
+
+  -webkit-box-shadow: 5px 5px 10px 0px rgba(240,240,240,1);
+  -moz-box-shadow: 5px 5px 10px 0px rgba(240,240,240,1);
+  box-shadow: 5px 5px 10px 0px rgba(240,240,240,1);
+
+  margin: 20px 5px;
+  background-color: lightgray;
+}
+
+
+/*Rocket effect*/
+.rocketContainer{
+    width: 300px;
+    height:300px;
+    margin: 0 auto;
+    position:relative;
+    overflow:hidden;
+}
+
+.planet{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:url(https://demo.tutorialzine.com/2013/10/css3-features-you-can-finally-use/assets/img/planet.png) no-repeat center center;
+}
+
+.rocket{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:url(https://demo.tutorialzine.com/2013/10/css3-features-you-can-finally-use/assets/img/rocket.png) no-repeat 50px center;
+
+    /* Chrome still requires the -webkit- prefix */
+    -webkit-animation:orbit 2s linear infinite;
+    animation:orbit 2s linear infinite;
+
+    transition:background-position 0.8s;
+}
+
+.rocketContainer:hover .rocket{
+    background-position:80px center;
+}
+
+/* Define the keyframes of the animation */
+
+@-webkit-keyframes orbit {
+    from {
+        -webkit-transform:rotate(0deg);}
+    to {
+        -webkit-transform:rotate(360deg);
+    }
+}
+
+@keyframes orbit {
+    from {
+        transform:rotate(0deg);
+
+        /* I am including the -webkit-transform properties, because
+           Chrome might start supporting keyframe without prefix in the future,
+           but we can't be certain whether it will support prefix-free transform
+           at the same time */
+
+        -webkit-transform:rotate(0deg);}
+    to {
+        transform:rotate(360deg);
+        -webkit-transform:rotate(360deg);
+    }
+}
+
+/*END Rocket */
