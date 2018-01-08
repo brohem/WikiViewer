@@ -1,24 +1,24 @@
 @import url('https://fonts.googleapis.com/css?family=Lobster');
 
 body{
-  font-size: 28px;
+  font-size: 20px;
 
 }
 
-body, html {
+/*body, html {
     height: 100%;
     margin: 0;
 
-}
+}*/
 
 .backgroundImage {
-  /* Full height */
-  height: 100%;
+    /* Full height */
+  /*height: 100%;*/
 
   /* Center and scale the image nicely */
-  background-position: center;
+  /*background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover;*/
 
 }
 
@@ -32,6 +32,12 @@ body, html {
 
 #inputField{
   border-radius: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  text-align: center;
+
+  margin-right: 20px;
 }
 
 /*IMPORTED CSS for button*/
@@ -68,7 +74,7 @@ body, html {
    border-top-color: #1b435e;
    background: #1b435e;
    }
-/*END*/
+/*END IMPORTED CSS for button*/
 
 button{
   cursor: pointer;
@@ -98,17 +104,76 @@ button{
   -moz-border-radius: 10px 10px 10px 10px;
   -webkit-border-radius: 10px 10px 10px 10px;
   border: 0px solid #4f4f4f;
-
+/*
   -webkit-box-shadow: 5px 5px 10px 0px rgba(240,240,240,1);
   -moz-box-shadow: 5px 5px 10px 0px rgba(240,240,240,1);
-  box-shadow: 5px 5px 10px 0px rgba(240,240,240,1);
+  box-shadow: 5px 5px 10px 0px rgba(240,240,240,1);*/
 
-  margin: 20px 5px;
+  /*margin-left: 10px;
+  margin-right: 0;*/
+  margin-top: 20px;
   background-color: lightgray;
+
+  height: 250px;
+}
+
+.resultDescription{
+
+  max-height: 150px;
+  overflow: hidden;
+}
+
+.filler, .image-container {
+  height: 150px;
+  width: 150px;
+  margin: auto;
+  text-align: center;
+}
+
+img {
+  vertical-align: middle;
+}
+
+.filler {
+  background-color: #ae4af9;
+  color: #fff !important;
+  font-size: 100px;
+  transition-property: opacity;
+  transition-duration: 500ms;
+}
+
+.filler:hover{
+  opacity: 0.60;
+}
+
+.link-filler {
+  color: #fff;
+}
+
+.link-filler:hover {
+  text-decoration: none;
+  color: #fff;
+
 }
 
 
-/*Rocket effect*/
+
+.test{
+  background-color: white;
+  height: 100px;
+  /*margin-left: 15px;*/
+  border: red thin solid;
+  margin-top: 50px;
+}
+/*.container{
+max-width: 540px;
+}*/
+
+
+/* **************************************** */
+/* **************************************** */
+/* **************************************** */
+/**Rocket effect*/
 .rocketContainer{
     width: 300px;
     height:300px;
